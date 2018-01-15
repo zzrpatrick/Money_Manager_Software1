@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="comp3350.moneymanager.presentation.HomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MONEY MANAGER"
+        android:id="@+id/homeTitle"
+        android:textSize="60dp"
+        android:layout_marginTop="61dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#424242"/>
+
+    <Button
+        android:textColor="#424242"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/homeStartButton"
+        android:onClick = "startClick"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="222dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Create your account now!"
+        android:id="@+id/homeCreateAccPrint"
+        android:textColor="#424242"
+        android:textSize="30dp"
+        android:layout_above="@+id/homeStartButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select an existing account!"
+        android:id="@+id/homeSelectAccPrint"
+        android:textColor="#424242"
+        android:textSize="30dp"
+        android:layout_above="@+id/homeNextButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:textColor="#424242"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/homeNextButton"
+        android:onClick="homeNextClick"
+        android:layout_above="@+id/homeCreateAccPrint"
+        android:layout_alignLeft="@+id/homeStartButton"
+        android:layout_alignStart="@+id/homeStartButton"
+        android:layout_marginBottom="147dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="No users exist yet!"
+        android:id="@+id/homeNoUserWarning"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/homeNextButton"
+        android:layout_alignStart="@+id/homeNextButton"
+        android:textColor="#fb0303" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="71dp"
+                    android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/hListView"
+            android:layout_width="517dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:background="#dff0fc"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/hDetails"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignEnd="@+id/hListView"
+            android:layout_alignLeft="@+id/hDetailsPrint"
+            android:layout_alignRight="@+id/hListView"
+            android:layout_alignStart="@+id/hDetailsPrint"
+            android:layout_below="@+id/hDetailsPrint"
+            android:background="#dff0fc"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/hDetailsPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/hListView"
+            android:layout_alignStart="@+id/hListView"
+            android:layout_below="@+id/hListView"
+            android:layout_marginTop="30dp"
+            android:text="Details"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#424242"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/hEditButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/hDetails"
+            android:layout_alignStart="@+id/hDetails"
+            android:layout_below="@+id/hDetails"
+            android:text="Edit"
+            android:textColor="#424242"/>
+
+        <Button
+            android:id="@+id/hDeleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="#424242"
+            android:layout_below="@+id/hDetails"
+            android:layout_alignRight="@+id/hDetails"
+            android:layout_alignEnd="@+id/hDetails"
+            android:onClick="deleteClick" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hHistoryPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Transaction History"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#424242"
+        android:textSize="60dp"/>
+</RelativeLayout>

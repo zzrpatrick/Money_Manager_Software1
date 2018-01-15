@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/blTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="Bills"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#424242"
+        android:textSize="60dp"/>
+
+    <ListView
+        android:id="@+id/blView"
+        android:layout_width="517dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/blTitle"
+        android:layout_centerHorizontal="true"
+        android:background="#dff0fc"/>
+
+    <TextView
+        android:id="@+id/blDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/blView"
+        android:layout_alignLeft="@+id/blDetailsTitle"
+        android:layout_alignRight="@+id/blView"
+        android:layout_alignStart="@+id/blDetailsTitle"
+        android:layout_below="@+id/blDetailsTitle"
+        android:background="#dff0fc"
+        android:textColor="#424242"/>
+
+    <TextView
+        android:id="@+id/blDetailsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/blView"
+        android:layout_alignStart="@+id/blView"
+        android:layout_centerVertical="true"
+        android:text="Details"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#424242"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/blNewBillButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/blDetails"
+        android:layout_alignRight="@+id/blDetails"
+        android:layout_below="@+id/blDetails"
+        android:nestedScrollingEnabled="false"
+        android:onClick="newBillClick"
+        android:text="New Bill"
+        android:textColor="#424242"/>
+
+    <Button
+        android:id="@+id/blEditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/blNewBillButton"
+        android:layout_alignLeft="@+id/blDetails"
+        android:layout_alignStart="@+id/blDetails"
+        android:onClick="editClick"
+        android:text="Edit"
+        android:textColor="#424242"/>
+
+    <TextView
+        android:id="@+id/blNoBillsWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/blDetailsTitle"
+        android:layout_alignEnd="@+id/blDetails"
+        android:layout_alignRight="@+id/blDetails"
+        android:text="No bills on record for this account"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fc0303"
+        android:visibility="invisible"/>
+</RelativeLayout>

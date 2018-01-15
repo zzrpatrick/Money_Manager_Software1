@@ -1,0 +1,241 @@
+Money Manager Log
+//TODO Decide whether to keep the edit option for transactions?? Probably be better without it.
+//TODO Add way to increase your savings.
+//TODO Recycle code for acceptance tests
+//TODO keeping track of whats done
+//TODO PLEEEASE REINSTALL BEFORE RUNNING UNIT TESTS
+//TODO this is not much of a problem but we use add new bill activity to edit a bill and the text still says add new bill when editing
+Acceptance Test progress:
+Mervin
+Selecting existing user
+Editing name
+Bill creation
+Invalid and valid registration
+Transaction creation
+
+Nyasha
+Settings
+edit a bill (BillActivity)
+
+Saturday July 2nd
+Work Done:
+1. Fixed bugs in 4 accetance tests and made 1 more thorough. By Nyasha Muringani. Time 1 hour
+
+
+Friday July 1st
+Work Done:
+1. Fixed/Added more acceptance tests. By Mervin Ferrer. Time 0.5 hours.
+2. Made user information update properly on user home after creating a transaction. By Mervin Ferrer. Time 0.5 hours.
+3. Fixed some bugs that happened while creating transactions. By Mervin Ferrer. Time 1 hour.
+4. Added delete function in the HistoryActivity for transactions. By Mervin Ferrer. Time 1 hour.
+
+Thursday June 30th
+Work Done:
+1. Changed user id from integer to users name. Refactored all errors this caused. By Samuel Peers. Cost: 2 hours.
+2. Added containsUser to register activity in validation phase. By Samuel Peers. Cost: 0.25 hours.
+3. Added containsTransaction to add transaction activity and corresponding error messages. By Samuel Peers. Cost: 0.25 hours.
+4. Added more acceptance tests. By Mervin Ferrer. Cost 1 hour.
+5. Wrote a couple of acceptance tests. By Nyasha Muringani. Cost 0.25 hours
+
+Wednesday June 29th
+Work Done:
+1. Created Calculate class and method totalBillsCost. By Samuel Peers. Cost: 0.5 hours.
+2. Added total bills cost in the activity_user and activity_user_home UI. Cost: 0.5 hours.
+3. Added robotium library to get acceptance tests started. By Mervin Ferrer. Cost: 0.5 hours.
+4. Wrote some acceptance tests for valid and invalid data. By Mervin Ferrer. Cost: 1 hour.
+
+Tuesday June 28th
+Work Done:
+1. Totally removed any mention of 'cycle'. By Samuel Peers. Cost: 0.75 hours.
+2. Fixed update bill error. By Samuel Peers. Cost: 0.5 hours.7
+3. Created accessTransactions and linked transaction activities with sql DB. By Samuel Peers. Cost 1 hour.
+
+Monday June 27th
+Work Done:
+1. Totally removed bill list from user class, and netIncome. Made getBillsCost in accessBills. By Samuel Peers. Cost: 2 hours.
+2. Wrote unit test for getBillsCost. By Samuel Peers. Cost 0.5 hours.
+3. Added more user tests. By Mervin Ferrer. Cost 0.5 hours.
+4. Fixed more warnings. By Mitchell Bielus Cost 2 hours.
+
+Thursday June 23rd
+Work Done:
+1. Fixed the AccessBillsTest. By Samuel Peers. Cost 1.5 hours.
+
+Wednesday June 22nd
+Work Done:
+1. Fixed a bunch of warnings: lowered data access, fixed typos, etc. By Mitchell Bielus. Cost 1 hour.
+
+Tuesday June 21st
+Group Meeting:
+Made final revisions for Iteration 2 release.
+Work Done:
+1. Added a "User Updated!" flash for when a user is edited. By Samuel Peers. Cost: 0.5 hours.
+2. Made RegisterActivity more readable and made it allow income of 0 and current savings as 0. By Samuel Peers. Cost: 1 hour.
+3. Totally refactored how bill ids are handled. By Samuel Peers. Cost 1 hour.
+4. Changed what back button does when in SettingsActivity. By Samuel Peers. Cost 0.25 hours.
+5. wrote more tests for the bill and user classes. By Nyasha Muringani. Cost: 1 hour.
+6. Got rid of the method on method stuff. By Mervin Ferrer. Cost 0.25 hours.
+
+Monday June 20th
+Work Done:
+1. Added intent for home button in UserHomeActivity. By Samuel Peers. Cost: 0.25 hours.
+2. Found and fixed an SQL exception when updating a Bill. By Samuel Peers. Cost: 0.5 hours.
+3. Renamed all xml variables to more useful names. By Mithell Bielus. Cost 2 hours.
+4. Found and fixed NumberFormatException in editIncomeActivity. By Samuel Peers. Cost 0.25 hours.
+5. Removed signout button and replaced with home button. By Samuel Peers. Cost 0.25 hours.
+6. Updated NewBillActivity to allow a value of 0. By Mitchell Bielus. Cost 0.5 hours.
+7. Fixed bug where UserHome wouldn't update the information. By Mervin Ferrer. Cost 0.25 hours.
+8. Made back button go straight to home page instead of the register/userselect page from userhome. By Mervin Ferrer. Cost 0.25 hours.
+9. user test re-implemented and user bug fixed by ZIRUI ZENG: Cost: 1 hour
+10. Added validation to the edit/new bill activities and fixed the edit income validation. By Mervin Ferrer. Cost 1 hour.
+11. Fixed bug where the BillList activity wasn't updated after a bill was added/edited. By Mervin Ferrer. Cost 0.5 hours.
+12. Finish the DataAccessStub by ZIRUI ZENG Cost: 1 hour;
+13. Added visibility toggling to select user button by Mitchell Bielus Cost 0.5 hours.
+14. Fixed some warnings by Mitchell Bielus Cost 0.5 hours.
+
+Sunday June 19th
+Work Done:
+1. Added a "no user exist" warning to HomeActivity. By Zirui Zeng. Cost: 1 hour.
+2. Created deleteBill method in DataAccessObject. By Samuel Peers. Cost: 0.5 hours.
+3. Changed User class to accommodate bill list obtained from DB. By Samuel Peers. Cost: 0.5 hours.
+4. Changed how BillID is obtained. By Samuel Peers. Cost: 0.5 hours.
+5. Created updateBill in dataAccessObject. By Samuel Peers. Cost: 1 hour.
+6. Message for no bills,found errors and improved some of the code a little bit. By Nyasha Muringani. Cost 1 hour
+7. Fixed the bug where if you delete the last bill it would still be on the list. By Mervin Ferrer. Cost: 0.5 hours.
+8. Fixed the bug where if you press back after deleting a bill you would return to that bill's activity. Mervin Ferrer. Cost: 0.5 hours.
+9. Wrote tests for AccessUsers. By Samuel Peers. Cost: 0.5 hours.
+10. Linked updateUser with EditIncomeActivity and EditNameActivity. By Samuel Peers. Cost 0.25 hours.
+11. Wrote updateBill and getRandom method in AccessBills and wrote corresponding methods in dataAccesStub and dataAccessObject. By Samuel Peers. Cost 0.5 hours.
+
+Saturday June 18th
+Work Done:
+1. Moved integer validation and string validation method into business/Validate Class and tested in the validate test class by Zirui Zeng. Cost: 2 hour
+
+Friday June 17th
+Work Done:
+1. Finished linking NewBillActivity and BillListActivity with HSQLDB by Samuel Peers. Cost: 1 hour.
+2. Fixed the bug where user count was totally wrong when the app was closed and reopened by Samuel Peers. Cost 1 hour.
+3. added clone methods to the objects and deep copy methods for the transaction,goal and bill arraylists by Nyasha Muringani. Cost 1 hour.
+4. Worked on crash from creating new users by Mitchell Bielus. Cost 2 hours.
+5. Added validation checks in EditNameActivity and NewBillActivity by Mervin Ferrer. Cost 1 hour.
+6. Bug:  No warning message in RegisterActivity when there is 0 income or savings
+   Bug fix: No warning message is needed because technically someone can start with 0 income or savings.
+
+Thursday June 16th
+Group meeting:
+Divvied up tasks, and worked on database and outstanding GUI bugs.
+Work done:
+1. Added UserSelect activity and functionality by Mervin Ferrer. Cost: 1 hour.
+2. Completed the tests for the stub database by Nyasha Muringani. Cost: 1 hour.
+3. Worked on bug relating to empty arraylists. By Mitchell Bielus. Cost: 3 hours.
+4. Finished linking HSQLDB with User related activities by Samuel Peers. Cost: 1 hour.
+5. Implemented Bill related methods in DataAccessObject by Samuel Peers. Cost: 4 hours.
+6. Created AccessBills class by Samuel Peers. Cost: 1 hour.
+7. Started linking HSQLDB with Bill related activities by Samuel Peers. Cost: 2 hours
+8. Added functionality to the EditName and EditIncome activity by Mervin Ferrer. Cost: 1 hour.
+
+Wednesday June 15th
+Work done:
+1. Added some more activities and added functionality to all relative activities except the
+   settings one by Mervin Ferrer. Cost: 12 hours.
+2. Implemented User related methods in DataAccessObject by Samuel Peers. Cost: 4 hours.
+3. Started linking HSQLDB with User related activities by Samuel Peers. Cost: 3 hours.
+
+Tuesday June 14th
+Group meeting:
+Working on implementation.
+Work done:
+1. Fixed crash on register activity by Zirui Zeng cost 2 hours.
+2. Set up HSQLDB database scheme by Samuel Peers. Cost: 3 hours.
+
+Bug fixed:
+1. Register Activity:
+   overbound string convert to integer
+   empty input of income and saving crash the program
+   radiobutton stays on weekly
+
+
+Thursday June 9th
+Group meeting:
+Went over GUI prototypes. Played around with database.
+1. Added new HistoryActivity by Mervin Ferrer
+2. Wrote tests, changed all statements of the form assert(a == b) to assertEquals(a,b) as well as
+   fixing equals methods by Mitchell Bielus
+
+Thursday June 2nd
+Group meeting: Discussed how to finalize code to hand in
+1. Finished gui for iteration 1 by Mervin Ferrer and Zirui Zeng
+2. Cleaned up code by Mitchell Bielus
+3. Wrote a test class by Samuel Peers
+
+Wednesday June 1st
+Group meeting:
+Went over developerTasks.txt and readme.txt rough drafts.
+Work done:
+1. Standardized code and removed unnecessary comments. By Samuel Peers.
+2. Worked on interface. By Nyasha Muriagani and Mervin Ferrer
+3. Connected the interface with the stub database by Zirui Zeng and Mervin Ferrer.
+4. Added to test classes by Mitchell Bielus
+
+Bug encountered:
+1. App launch page stay on the last page
+
+
+Tuesday May 31th
+Group meeting:
+Fiddled around with running the app on the actual tablet.
+Work done:
+1. Edited the stub database class and finished the testing of the stub database. By Zirui Zeng.
+2. Added some more unit tests. By Samuel Peers.
+3. Worked on 'Register User' GUI. By Mervin Ferrer and Nyasha Muriagani.
+4. Resolved a bunch of merging errors. By Mitchell Bielus.
+
+Monday May 30th
+1. Updated some test classes and slightly modified the Goal class by Mitchell Bielus.
+
+Wednesday May 25th:
+Group meeting:
+Decided to create GUI for adding a user. The reason being that all other tasks depend on their being
+users.
+Work Done:
+1. Transaction, LinkedList, and income tests created by Nyasha Muriagani.
+2. Developer task list and readme started by Samuel Peers.
+3. 'Add user' GUI started by Mervin Ferrer.
+4. Made test for User class and updated User class. By Mitchell Bielus.
+5. Set up the DataAccessStub. By Zirui Zeng
+
+TuesDay May 24th:
+Group Meeting:
+Created a to do list and assigned tasks.
+Work done:
+1. BillTest class created and testConstructor method created.
+   Some unit tests were created in testConstructor. By Samuel Peers.
+2. Updated Bill class. By Samuel Peers.
+2. GoalTest class created. Goal class edited by Zirui Zeng.
+3. Made a HelloWorld GUI. Reason being to become familiar with android GUIs.
+   By Mitchell Bielus.
+
+Monday May 23th:
+Work done:
+1. Added/edited some class stuff. By Mervin Ferrer.
+
+Friday May 20th:
+Work done:
+1. Added some rough classes (Bill, User, Income, Goal, Transaction). By Mervin Ferrer.
+
+Thursday May 19th:
+Group Meeting:
+Played around with committing and updating (just getting used to working with SVN).
+
+Monday May 16th:
+Work done:
+1. Copied SRSYS project and changed all names referring to SYSYS. By Samuel Peers and Mitchell Bielus.
+
+Monday May 16th:
+Group Meeting:
+Decided to copy SRSYS project instead of starting from scratch. The reason being
+that none of us are familiar with android studio and this makes it way easier.
+
+Sunday May 15th:
+Work done:
+1. Created the repo. By Samuel Peers.

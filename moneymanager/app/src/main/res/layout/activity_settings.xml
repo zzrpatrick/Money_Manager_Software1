@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+    <TextView
+        android:id="@+id/asSettingsPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Settings"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#424242"
+        android:textSize="60dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/asSettingsPrint"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="62dp"
+        android:baselineAligned="false"
+        android:onClick="editNameClick"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/editIncomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/asSettingsPrint"
+        android:layout_alignLeft="@+id/asSettingsPrint"
+        android:layout_alignRight="@+id/asSettingsPrint"
+        android:layout_alignStart="@+id/asSettingsPrint"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="60dp"
+        android:onClick="editIncomeClick"
+        android:text="Edit Income"/>
+
+    <Button
+        android:id="@+id/editNameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editIncomeButton"
+        android:layout_alignEnd="@+id/editIncomeButton"
+        android:layout_alignLeft="@+id/asSettingsPrint"
+        android:layout_alignRight="@+id/editIncomeButton"
+        android:layout_alignStart="@+id/asSettingsPrint"
+        android:onClick="editNameClick"
+        android:text="Edit Name"/>
+
+    <TextView
+        android:id="@+id/updatedUserText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/asSettingsPrint"
+        android:layout_centerHorizontal="true"
+        android:nestedScrollingEnabled="false"
+        android:text="User updated!"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+</RelativeLayout>

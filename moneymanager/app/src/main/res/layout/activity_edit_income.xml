@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/eiEditIncomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Edit Your Income"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="60dp"/>
+
+    <TextView
+        android:id="@+id/eiCurrIncomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eiEditIncomeTitle"
+        android:layout_centerHorizontal="true"
+        android:text="Your current income:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/eiCurrIncomeOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eiCurrIncomeTitle"
+        android:layout_centerHorizontal="true"
+        android:text="Shows your current income"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/eiNewIncomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eiCurrIncomeOut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="Your new Income: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#424242"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/eiNewIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/eiEditIncomeTitle"
+        android:layout_alignLeft="@+id/eiEditIncomeTitle"
+        android:layout_alignRight="@+id/eiEditIncomeTitle"
+        android:layout_alignStart="@+id/eiEditIncomeTitle"
+        android:layout_below="@+id/eiNewIncomeTitle"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:hint="Enter monthly income"/>
+
+    <Button
+        android:id="@+id/eiSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eiNewIncome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="177dp"
+        android:onClick="incomeSaveClick"
+        android:text="Save"/>
+
+    <Button
+        android:id="@+id/eiCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eiSaveButton"
+        android:layout_alignStart="@+id/eiSaveButton"
+        android:layout_below="@+id/eiSaveButton"
+        android:text="Cancel"/>
+
+    <TextView
+        android:id="@+id/incomeWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:nestedScrollingEnabled="false"
+        android:text="Error: That income is invalid!"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ff0000"/>
+</RelativeLayout>

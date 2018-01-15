@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="comp3350.moneymanager.presentation.RegisterActivity">
+
+    <TextView
+        android:id="@+id/startSetupPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="New Account Set Up"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#424242"
+        android:textSize="50dp"/>
+
+    <TextView
+        android:id="@+id/startNamePrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/startSetupPrint"
+        android:layout_marginTop="64dp"
+        android:text="Name:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#424242"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/startCurrIncomePrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/startNewName"
+        android:layout_marginTop="43dp"
+        android:text="Income:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#424242"
+        android:textSize="40dp"/>
+
+    <EditText
+        android:id="@+id/startNewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/startSetupPrint"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/startSetupPrint"
+        android:layout_below="@+id/startNamePrint"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:maxLength="35"
+        android:maxLines="1"
+        android:onClick="nameClick"
+        android:textColor="#5B5B5B"/>
+
+    <EditText
+        android:id="@+id/startCurrIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startCurrIncomePrint"
+        android:layout_toRightOf="@+id/startDollarPrint"
+        android:ems="10"
+        android:hint="Enter your monthly earnings"
+        android:inputType="numberDecimal"
+        android:maxLength="35"
+        android:maxLines="1"
+        android:onClick="incomeClick"
+        android:textColor="#5B5B5B"
+        android:layout_alignRight="@+id/startNewName"
+        android:layout_alignEnd="@+id/startNewName"/>
+
+    <Button
+        android:id="@+id/startSubmitButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startBackButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="submitClick"
+        android:text="Submit "
+        android:textColor="#424242"/>
+
+    <Button
+        android:id="@+id/startBackButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="69dp"
+        android:onClick="clickBack"
+        android:text="Back"
+        android:textColor="#424242"/>
+
+    <TextView
+        android:id="@+id/startCurrSavingsPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:text="Current savings:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#424242"
+        android:textSize="40dp"
+        android:layout_below="@+id/startCurrIncome"/>
+
+    <EditText
+        android:id="@+id/startCurrSavings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startCurrSavingsPrint"
+        android:layout_toRightOf="@+id/startDollar2Print"
+        android:ems="10"
+        android:hint="Enter your current savings "
+        android:inputType="numberDecimal"
+        android:maxLength="35"
+        android:maxLines="1"
+        android:onClick="savingsClick"
+        android:textColor="#5B5B5B"
+        android:layout_alignRight="@+id/startCurrIncome"
+        android:layout_alignEnd="@+id/startCurrIncome"/>
+
+    <TextView
+        android:id="@+id/startDollarPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/startCurrIncome"
+        android:layout_alignBottom="@+id/startCurrIncome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="$"
+        android:textColor="#424242"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/startDollar2Print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/startCurrSavings"
+        android:layout_alignBottom="@+id/startCurrSavings"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="$"
+        android:textColor="#424242"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/startEmptyFieldWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startBackButton"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/startSubmitButton"
+        android:layout_toRightOf="@+id/startSubmitButton"
+        android:nestedScrollingEnabled="false"
+        android:text="Error: Not all fields are filled in correctly"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ff0000"/>
+
+    <TextView
+        android:id="@+id/auNetPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/startBackButton"
+        android:layout_alignLeft="@+id/startEmptyFieldWarning"
+        android:layout_alignStart="@+id/startEmptyFieldWarning"
+        android:allowUndo="false"
+        android:text="Error: That savings or income is not allowed!"
+        android:textColor="#ff0101"/>
+
+    <TextView
+        android:id="@+id/userExistsError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:text="User already exsists!"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ff0000"
+        android:layout_above="@+id/startSubmitButton"
+        android:layout_alignLeft="@+id/startEmptyFieldWarning"
+        android:layout_alignStart="@+id/startEmptyFieldWarning"/>
+
+</RelativeLayout>

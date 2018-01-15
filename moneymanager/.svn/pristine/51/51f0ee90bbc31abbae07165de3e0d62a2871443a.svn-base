@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/billTitlePrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="41dp"
+        android:text="Bill Title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#424242"
+        android:textSize="60dp"/>
+
+    <TextView
+        android:id="@+id/billCostPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/billTitlePrint"
+        android:layout_marginLeft="25dp"
+        android:text="$Cost"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#424242"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/billCyclePrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/billCostPrint"
+        android:layout_marginLeft="25dp"
+        android:text="Cycle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#424242"
+        android:textSize="40dp"/>
+
+    <Button
+        android:id="@+id/billSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/billDeleteButton"
+        android:layout_toEndOf="@+id/billName"
+        android:layout_toRightOf="@+id/billName"
+        android:onClick="saveClick"
+        android:text="Save"
+        android:textColor="#424242"/>
+
+    <Button
+        android:id="@+id/billDeleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:onClick="deleteClick"
+        android:text="Delete"
+        android:textColor="#424242"/>
+
+    <TextView
+        android:id="@+id/billNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/billTitlePrint"
+        android:layout_alignStart="@+id/billTitlePrint"
+        android:layout_below="@+id/billError"
+        android:layout_marginTop="35dp"
+        android:text="New Name:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#424242"/>
+
+    <EditText
+        android:id="@+id/billName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/billNameTitle"
+        android:layout_alignStart="@+id/billNameTitle"
+        android:layout_below="@+id/billNameTitle"
+        android:layout_toLeftOf="@+id/billDeleteButton"
+        android:layout_toStartOf="@+id/billDeleteButton"
+        android:hint="E.g. Phone Bill"
+        android:maxLength="35"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/billCostTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/billName"
+        android:layout_alignStart="@+id/billName"
+        android:layout_below="@+id/billName"
+        android:layout_marginTop="29dp"
+        android:text="New Cost:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#424242"/>
+
+    <EditText
+        android:id="@+id/billCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/billName"
+        android:layout_alignLeft="@+id/billCyclePrint"
+        android:layout_alignRight="@+id/billName"
+        android:layout_alignStart="@+id/billCyclePrint"
+        android:layout_below="@+id/billCostTitle"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/billError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/billNameTitle"
+        android:layout_alignStart="@+id/billNameTitle"
+        android:layout_below="@+id/billCyclePrint"
+        android:nestedScrollingEnabled="false"
+        android:text="Error: Not all fields are filled in correctly"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ff0000"/>
+
+</RelativeLayout>

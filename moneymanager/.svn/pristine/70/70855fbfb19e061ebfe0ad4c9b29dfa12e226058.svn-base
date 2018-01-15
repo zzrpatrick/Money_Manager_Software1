@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="comp3350.moneymanager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="comp3350.moneymanager.presentation.HomeActivity"
+            android:label="MM: Home" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="comp3350.moneymanager.presentation.RegisterActivity"
+            android:label="MM: User Registrations" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comp3350.moneymanager.presentation.RegisterActivity" />
+        </activity>
+        <activity
+            android:name="comp3350.moneymanager.presentation.UserActivity"
+            android:label="MM: User" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comp3350.moneymanager.presentation.UserActivity" />
+        </activity>
+        <activity
+            android:name="comp3350.moneymanager.presentation.HistoryActivity"
+            android:label="MM: History" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comp3350.moneymanager.presentation.HistoryActivity" />
+        </activity>
+        <activity
+            android:name="comp3350.moneymanager.presentation.BillActivity"
+            android:label="MM: Bill" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comp3350.moneymanager.presentation.BillActivity" />
+        </activity>
+        <activity
+            android:name="comp3350.moneymanager.presentation.BillListActivity"
+            android:label="MM: BillList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comp3350.moneymanager.presentation.BillListActivity" />
+        </activity>
+        <activity
+            android:name="comp3350.moneymanager.presentation.SettingsActivity"
+            android:label="MM: Settings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comp3350.moneymanager.presentation.SettingsActivity" />
+        </activity>
+        <activity
+            android:name="comp3350.moneymanager.presentation.TransactionActivity"
+            android:label="MM: Transaction" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comp3350.moneymanager.presentation.TransactionActivity" />
+        </activity>
+        <activity
+            android:name="comp3350.moneymanager.presentation.UserHomeActivity"
+            android:label="MM: UserHome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comp3350.moneymanager.presentation.UserHomeActivity" />
+        </activity>
+        <activity
+            android:name="comp3350.moneymanager.presentation.NewBillActivity"
+            android:label="MM: NewBill" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comp3350.moneymanager.presentation.NewBillActivity" />
+        </activity>
+        <activity
+            android:name="comp3350.moneymanager.presentation.UserSelectActivity"
+            android:label="MM: UserSelect" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comp3350.moneymanager.presentation.UserSelectActivity" />
+        </activity>
+        <activity
+            android:name="comp3350.moneymanager.presentation.EditNameActivity"
+            android:label="MM: EditName" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comp3350.moneymanager.presentation.EditNameActivity" />
+        </activity>
+        <activity
+            android:name="comp3350.moneymanager.presentation.EditIncomeActivity"
+            android:label="MM: EditIncome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comp3350.moneymanager.presentation.EditIncomeActivity" />
+        </activity>
+    </application>
+
+</manifest>

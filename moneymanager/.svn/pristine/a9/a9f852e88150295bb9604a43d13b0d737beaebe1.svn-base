@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\mervin\\AndroidStudioProjects\\moneymanager\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_course_students.xml",
+        "source": "C:\\Users\\mervin\\AndroidStudioProjects\\moneymanager\\app\\src\\main\\res\\menu\\menu_course_students.xml"
+    },
+    {
+        "merged": "C:\\Users\\mervin\\AndroidStudioProjects\\moneymanager\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_courses.xml",
+        "source": "C:\\Users\\mervin\\AndroidStudioProjects\\moneymanager\\app\\src\\main\\res\\menu\\menu_courses.xml"
+    },
+    {
+        "merged": "C:\\Users\\mervin\\AndroidStudioProjects\\moneymanager\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_students.xml",
+        "source": "C:\\Users\\mervin\\AndroidStudioProjects\\moneymanager\\app\\src\\main\\res\\menu\\menu_students.xml"
+    },
+    {
+        "merged": "C:\\Users\\mervin\\AndroidStudioProjects\\moneymanager\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_student_courses.xml",
+        "source": "C:\\Users\\mervin\\AndroidStudioProjects\\moneymanager\\app\\src\\main\\res\\menu\\menu_student_courses.xml"
+    },
+    {
+        "merged": "C:\\Users\\mervin\\AndroidStudioProjects\\moneymanager\\app\\build\\intermediates\\res\\merged\\debug\\menu\\user_home.xml",
+        "source": "C:\\Users\\mervin\\AndroidStudioProjects\\moneymanager\\app\\src\\main\\res\\menu\\user_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\mervin\\AndroidStudioProjects\\moneymanager\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_home.xml",
+        "source": "C:\\Users\\mervin\\AndroidStudioProjects\\moneymanager\\app\\src\\main\\res\\menu\\menu_home.xml"
+    }
+]

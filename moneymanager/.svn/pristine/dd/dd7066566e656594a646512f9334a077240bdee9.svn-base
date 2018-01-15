@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nbNewBillPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25dp"
+        android:text="New Bill Creation"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#424242"
+        android:textSize="60dp"/>
+
+    <TextView
+        android:id="@+id/nbFillFieldsPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nbNewNamePrint"
+        android:layout_alignStart="@+id/nbNewNamePrint"
+        android:layout_below="@+id/nbNewBillPrint"
+        android:text="Fill in the following fields"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#424242"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/nbNewNamePrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nbNewBillPrint"
+        android:layout_alignStart="@+id/nbNewBillPrint"
+        android:layout_below="@+id/nbFillFieldsPrint"
+        android:text="New Name:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#424242"/>
+
+    <TextView
+        android:id="@+id/nbNewCostPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Cost:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#424242"
+        android:layout_below="@+id/nbBillName"
+        android:layout_alignLeft="@+id/nbBillName"
+        android:layout_alignStart="@+id/nbBillName"
+        android:layout_marginTop="37dp"/>
+
+    <EditText
+        android:id="@+id/nbBillName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nbCostOut"
+        android:layout_alignLeft="@+id/nbNewNamePrint"
+        android:layout_alignRight="@+id/nbCostOut"
+        android:layout_alignStart="@+id/nbNewNamePrint"
+        android:layout_below="@+id/nbNewNamePrint"
+        android:hint="E.g. Phone Bill"
+        android:maxLength="35"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/nbCostOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:layout_below="@+id/nbNewCostPrint"
+        android:layout_alignLeft="@+id/nbNewNamePrint"
+        android:layout_alignStart="@+id/nbNewNamePrint"/>
+
+    <Button
+        android:id="@+id/nbCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nbSaveButton"
+        android:layout_marginEnd="83dp"
+        android:layout_marginRight="83dp"
+        android:onClick="cancelClick"
+        android:text="Cancel"
+        android:textColor="#424242"/>
+
+    <Button
+        android:id="@+id/nbSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nbCancelButton"
+        android:layout_alignStart="@+id/nbCancelButton"
+        android:layout_gravity="right"
+        android:onClick="newSaveClick"
+        android:text="Save"
+        android:textColor="#424242"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/nbMissingFieldsWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/nbNewNamePrint"
+        android:layout_toRightOf="@+id/nbNewNamePrint"
+        android:nestedScrollingEnabled="false"
+        android:text="Error: Not all fields are filled in correctly"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ff0000"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/billExists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nbMissingFieldsWarning"
+        android:layout_alignStart="@+id/nbMissingFieldsWarning"
+        android:layout_alignTop="@+id/nbSaveButton"
+        android:text="Bill with that name already exists!"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ff0000"/>
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/auhUsernamePrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="235dp"
+            android:text="User&apos;s Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#424242"
+            android:textSize="60dp"/>
+
+        <TextView
+            android:id="@+id/auhMonthIncomePrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/auhUsernamePrint"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Monthly Income: __"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/auhMonthNetIncPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Monthly Net Income: __"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#424242"
+            android:layout_below="@+id/auhTotalBillsCost"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/auhHomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/auhBillLIstButton"
+            android:layout_toStartOf="@+id/auhBillLIstButton"
+            android:background="@drawable/home"
+            android:onClick="homeClick"
+            android:textAlignment="gravity"
+            android:textColor="#424242"/>
+        android:onClick="homeClick"
+        android:nestedScrollingEnabled="false"/>
+
+        <Button
+            android:id="@+id/auhBillLIstButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/auhHomeButton"
+            android:layout_toLeftOf="@+id/auhHistoryButton"
+            android:layout_toStartOf="@+id/auhHistoryButton"
+            android:background="@drawable/dollar"
+            android:onClick="billListClick"
+            android:textAlignment="gravity"
+            android:textColor="#424242"/>
+
+        <Button
+            android:id="@+id/auhHistoryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/auhBillLIstButton"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/history"
+            android:onClick="historyClick"
+            android:textAlignment="gravity"
+            android:textColor="#424242"/>
+
+        <Button
+            android:id="@+id/auhSettingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/auhHistoryButton"
+            android:layout_toEndOf="@+id/auhHistoryButton"
+            android:layout_toRightOf="@+id/auhHistoryButton"
+            android:background="@drawable/settings"
+            android:onClick="settingsClick"
+            android:textAlignment="gravity"
+            android:textColor="#424242"/>
+
+        <Button
+            android:id="@+id/auhAddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/auhSettingsButton"
+            android:layout_toEndOf="@+id/auhSettingsButton"
+            android:layout_toRightOf="@+id/auhSettingsButton"
+            android:background="@drawable/add"
+            android:onClick="addClick"
+            android:singleLine="false"
+            android:textAlignment="gravity"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/auhSavingsPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/auhMonthNetIncPrint"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Savings: __"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/auhTotalBillsCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Total Bills Cost: __"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#424242"
+            android:layout_below="@+id/auhMonthIncomePrint"
+            android:layout_alignLeft="@+id/auhMonthIncomePrint"
+            android:layout_alignStart="@+id/auhMonthIncomePrint"/>
+    </RelativeLayout>
+</RelativeLayout>

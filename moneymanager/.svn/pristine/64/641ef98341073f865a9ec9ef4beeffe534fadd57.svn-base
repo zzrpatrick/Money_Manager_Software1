@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/enTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Edit Your Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#424242"
+        android:textSize="60dp"/>
+
+    <TextView
+        android:id="@+id/enCurrNamePrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enTitle"
+        android:layout_centerHorizontal="true"
+        android:text="Your current name: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#424242"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/enCurrNameOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enCurrNamePrint"
+        android:layout_centerHorizontal="true"
+        android:text="Shows your current name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#424242"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/enNewNamePrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enCurrNameOut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="99dp"
+        android:text="Your new name: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#424242"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/enCurrName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/enTitle"
+        android:layout_alignLeft="@+id/enTitle"
+        android:layout_alignRight="@+id/enTitle"
+        android:layout_alignStart="@+id/enTitle"
+        android:layout_below="@+id/enNewNamePrint"
+        android:hint="e.g. Josh"
+        android:maxLength="35"
+        android:maxLines="1"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/enSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enCurrName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="127dp"
+        android:onClick="nameSaveClick"
+        android:text="Save"
+        android:textColor="#424242"/>
+
+    <Button
+        android:id="@+id/enCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enSaveButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="nameCancelClick"
+        android:text="Cancel"
+        android:textColor="#424242"/>
+
+    <TextView
+        android:id="@+id/enNameWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enCurrName"
+        android:layout_centerHorizontal="true"
+        android:text="You cannot leave this empty or begin with a space"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff0000"
+        android:textSize="25dp"/>
+</RelativeLayout>
